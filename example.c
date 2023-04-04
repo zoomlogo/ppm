@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "ppm.h"
 
-int main() {
+int main(void) {
     rgb_t buf[1200]; /* buffer with 1200 pixels */
 
     /* populate the buffer */
