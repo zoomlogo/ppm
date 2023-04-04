@@ -11,7 +11,7 @@ typedef uint8_t rgb_t __attribute__((vector_size (3)));
 
 rgb_t rgb(uint8_t, uint8_t, uint8_t);
 void  ppm(FILE *, rgb_t *, int, int);
-void  rgb_pr(rgb_t c);
+void  rgb_pr(rgb_t);
 
 #ifdef __cplusplus
 }
