@@ -7,7 +7,7 @@ extern "C" {
 #include <stdint.h>
 #include <stdio.h>
 
-typedef uint8_t rgb_t __attribute__((vector_size (3)));
+typedef uint8_t rgb_t __attribute__((vector_size (4)));
 
 rgb_t rgb(uint8_t, uint8_t, uint8_t);
 void  ppm(FILE *, rgb_t *, int, int);
