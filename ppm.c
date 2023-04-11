@@ -10,10 +10,10 @@ void ppm(FILE *file, rgb_t *pixels, int width, int height) {
     long len = width * (long) height;
     fprintf(file, "P3\n%d %d\n255\n", width, height);
     for (long i = 0; i < len; i++) {
-        fprintf(file, "%d %d %d\n", pixels[i][0], pixels[i][1], pixels[i][2]);
+        fprintf(file, "%d %d %d\n", pixels[i].r, pixels[i].g, pixels[i].g);
     }
 }
 
-void rgb_pr(rgb_t c) {
-    printf("rgb(%d, %d, %d)\n", c[0], c[1], c[2]);
+void rgb_print(rgb_t c) {
+    printf("rgb(%d, %d, %d)\n", c.r, c.g, c.b);
 }
