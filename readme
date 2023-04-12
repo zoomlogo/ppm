@@ -4,6 +4,6 @@ adds:
 - rgb_t: a simple type for representing rgb colours
 - rgb(): initialises `rgb_t` with values for red, green and blue
 - ppm(): writes to a `FILE` from an array of `rgb_t`.
-- rgb_pr(): prints an `rgb_t` nicely.
+- rgb_print(): prints an `rgb_t` nicely.
 
 check `example.c` for sample usage.
