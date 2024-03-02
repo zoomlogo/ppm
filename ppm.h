@@ -6,14 +6,13 @@ extern "C" {
 
 #include <stdint.h>
 #include <stdio.h>
-
 typedef struct {
     uint8_t r, g, b;
 } rgb_t;
 
-rgb_t rgb(uint8_t, uint8_t, uint8_t);
-void  ppm(FILE *, rgb_t *, int, int);
-void  rgb_print(rgb_t);
+rgb_t rgb(uint8_t r, uint8_t g, uint8_t b);
+void ppm(FILE *file, rgb_t *pixels, int width, int height);
+void rgb_print(rgb_t c);
 
 #ifdef __cplusplus
 }
